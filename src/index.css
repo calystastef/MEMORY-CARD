@@ -7,13 +7,13 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
-  background: #0a0a0a;
+  background: #f2e8cf;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  color: #fff;
+  color: #1e3a1f;
 }
 
 #root {
@@ -33,18 +33,18 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background: rgba(15, 23, 42, 0.9);
+  background: #386641;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(56, 102, 65, 0.3);
   width: 100%;
   max-width: 600px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #2d5235;
 }
 
 .game-header h1 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #f2e8cf;
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ body {
 
 .stat-label {
   font-size: 0.9rem;
-  color: #a1a1aa;
+  color: #a7c957;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -73,12 +73,12 @@ body {
 .stat-value {
   font-size: 2rem;
   font-weight: bold;
-  color: #818cf8;
+  color: #bc4749;
 }
 
 .reset-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #bc4749;
+  color: #f2e8cf;
   border: none;
   padding: 12px 30px;
   font-size: 1.1rem;
@@ -86,12 +86,13 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(188, 71, 73, 0.3);
 }
 
 .reset-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: #a33d3f;
+  box-shadow: 0 6px 20px rgba(188, 71, 73, 0.4);
 }
 
 .reset-btn:active {
@@ -99,12 +100,12 @@ body {
 }
 
 .win-message {
-  background: rgba(15, 23, 42, 0.95);
+  background: #386641;
   padding: 30px 50px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(56, 102, 65, 0.3);
+  border: 1px solid #2d5235;
   animation: slideDown 0.5s ease-out;
 }
 
@@ -122,11 +123,12 @@ body {
 .win-message h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #f2e8cf;
 }
 
 .win-message p {
   font-size: 1.2rem;
-  color: #a1a1aa;
+  color: #a7c957;
 }
 
 .cards-grid {
@@ -154,25 +156,25 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(56, 102, 65, 0.2);
   backface-visibility: hidden;
   transition: opacity 0.3s, transform 0.3s;
 }
 
 .card-front {
-  background: linear-gradient(to bottom, #0f172a, #0b0f1a);
-  color: white;
+  background: #386641;
+  color: #f2e8cf;
   font-weight: bold;
   font-size: 3rem;
   z-index: 1;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #2d5235;
 }
 
 .card-back {
-  background: #1e1e1e;
+  background: #6a994e;
   font-size: 4rem;
   z-index: 0;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #5a8540;
 }
 
 .card.flipped .card-front {
@@ -190,9 +192,9 @@ body {
 }
 
 .card.matched .card-back {
-  background: rgba(126, 211, 33, 0.2);
-  box-shadow: 0 0 20px rgba(126, 211, 33, 0.4);
-  border: 2px solid rgba(126, 211, 33, 0.5);
+  background: #a7c957;
+  box-shadow: 0 0 20px rgba(167, 201, 87, 0.5);
+  border: 2px solid #8aaa3a;
 }
 
 .card:hover:not(.matched):not(.flipped) .card-front {
