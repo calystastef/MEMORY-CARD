@@ -2,6 +2,9 @@
 
 A card-matching memory game built with React. Flip cards to find matching pairs — tests your memory as the board resets each round.
 
+## live demo 
+[Play it here](https://memory-card-liard-omega.vercel.app/)
+
 ## tech stack
 
 - React 19
