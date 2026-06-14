@@ -1,8 +1,9 @@
 # Memory Card Game
 
-A card-matching memory game built with React. Flip cards to find matching pairs — tests your memory as the board resets each round.
+A card-matching memory game built with React and Vite. Flip cards to find matching pairs, track your score, and see if you can beat your best — the board reshuffles each round to keep you on your toes.
 
-## live demo 
+## live demo
+
 [Play it here](https://memory-card-liard-omega.vercel.app/)
 
 ## tech stack
@@ -18,14 +19,19 @@ A card-matching memory game built with React. Flip cards to find matching pairs 
 - Track current and best score
 - Cards shuffle on every round
 
-## getting started
+## project structure
 
-```bash
-npm install
-npm run dev
 ```
-
-Then open `http://localhost:5173` in your browser.
+src/
+├── components/
+│   ├── Card.jsx          # Individual flip card
+│   ├── GameHeader.jsx    # Score display and round info
+│   └── WinMessage.jsx    # Win screen shown on round completion
+├── hooks/
+│   └── useGameLogic.js   # Game state, shuffle logic, and score tracking
+├── App.jsx               # Root component and game layout
+└── index.css
+```
 
 ## what I learned
 
